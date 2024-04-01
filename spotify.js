@@ -60,7 +60,7 @@ async function main() {
     songUL.innerHTML =
       songUL.innerHTML +
       `<li>
-    <img src="/svgss/musicicon.svg" class="invert musicicon">
+    <img src="./svgss/musicicon.svg" class="invert musicicon">
     <div class="info">
       <div>${song.replaceAll("%20", " ")}</div>
       <div>Swastik</div>
@@ -68,7 +68,7 @@ async function main() {
     <div class="playNow">
       <div class="pl">Play</div>
       <div class=pl2>Now</div>
-      <img src="/svgss/play.svg" class="invert">
+      <img src="./svgss/play.svg" class="invert">
     </div>
     </li>`;
   }
@@ -92,10 +92,10 @@ async function main() {
   play.addEventListener("click", () => {
     if (currentSong.paused) {
       currentSong.play();
-      play.src = "/svgss/pause.svg";
+      play.src = "./svgss/pause.svg";
     } else {
       currentSong.pause();
-      play.src = "/svgss/play.svg";
+      play.src = "./svgss/play.svg";
     }
   });
 
@@ -162,11 +162,11 @@ async function main() {
     if (!loop.classList.contains("clicked")) {
       loop.classList.add("clicked");
       loop.classList.remove("invert");
-      loop.src = "/svgss/loop-colored.svg";
+      loop.src = "./svgss/loop-colored.svg";
     } else {
       loop.classList.remove("clicked");
       loop.classList.add("invert");
-      loop.src = "/svgss/arrow-reload-horizontal.svg";
+      loop.src = "./svgss/arrow-reload-horizontal.svg";
     }
     if (isloop == false) {
       isloop = true;
