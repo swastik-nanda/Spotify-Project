@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/spotify project/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/spotify/spotifystyle.css" />
-    <link rel="stylesheet" href="/spotify/spotifyutility.css" />
+    <link rel="stylesheet" href="/spotifystyle.css" />
+    <link rel="stylesheet" href="/spotifyutility.css" />
     <title>Spotify</title>
   </head>
 
@@ -19,40 +19,26 @@
     <div class="container flex bg-black">
       <div class="left">
         <div class="close">
-          <img src="/spotify/svgss/cancel-01.svg" class="invert closeicon" />
+          <img src="/svgss/cancel-01.svg" class="invert closeicon" />
         </div>
         <div class="home bg-grey rounded m-1 p-1">
           <div class="logo m-1">
             <img
               class="invert spotifyLogo"
-              src="/spotify/svgss/spotifylogo.svg"
+              src="/svgss/spotifylogo.svg"
               alt="spotify"
             />
           </div>
           <ul>
+            <li><img class="invert" src="/svgss/home.svg" alt="home" />Home</li>
             <li>
-              <img
-                class="invert"
-                src="/spotify/svgss/home.svg"
-                alt="home"
-              />Home
-            </li>
-            <li>
-              <img
-                class="invert"
-                src="/spotify/svgss/search.svg"
-                alt="search"
-              />Search
+              <img class="invert" src="/svgss/search.svg" alt="search" />Search
             </li>
           </ul>
         </div>
         <div class="library bg-grey rounded m-1 p-1">
           <div class="heading">
-            <img
-              src="/spotify/svgss/playlist.svg"
-              class="invert"
-              alt="playlist"
-            />
+            <img src="/svgss/playlist.svg" class="invert" alt="playlist" />
             <h2>Your library</h2>
           </div>
           <div class="footer">
@@ -93,12 +79,12 @@
       <div class="right rounded">
         <div class="header">
           <div class="nav">
-            <img class="invert hamburger" src="/spotify/svgss/menu-01.svg" />
+            <img class="invert hamburger" src="/svgss/menu-01.svg" />
             <button class="navbutton">
-              <img src="/spotify/svgss/leftnav.svg" class="invert navicon" />
+              <img src="/svgss/leftnav.svg" class="invert navicon" />
             </button>
             <button class="navbutton">
-              <img src="/spotify/svgss/rightnav.svg" class="invert navicon" />
+              <img src="/svgss/rightnav.svg" class="invert navicon" />
             </button>
           </div>
           <div class="buttons">
@@ -114,11 +100,11 @@
                 <button class="playButton">
                   <img
                     class="playIcon"
-                    src="/spotify/svgss/playicon-removebg-preview.png"
+                    src="/svgss/playicon-removebg-preview.png"
                   />
                 </button>
               </div>
-              <img src="/spotify/svgss/spotify playlist1.jpeg" alt="" />
+              <img src="/svgss/spotify playlist1.jpeg" alt="" />
               <h2 class="playlistName">lofi beats</h2>
               <p class="playlistDesc">
                 chill beats, lofi vibes, new tracks every week...
@@ -129,11 +115,11 @@
                 <button class="playButton">
                   <img
                     class="playIcon"
-                    src="/spotify/svgss/playicon-removebg-preview.png"
+                    src="/svgss/playicon-removebg-preview.png"
                   />
                 </button>
               </div>
-              <img src="/spotify/svgss/spotify playlist1.jpeg" alt="" />
+              <img src="/svgss/spotify playlist1.jpeg" alt="" />
               <h2 class="playlistName">lofi beats</h2>
               <p class="playlistDesc">
                 chill beats, lofi vibes, new tracks every week...
@@ -148,32 +134,20 @@
             <div class="abovebar">
               <div class="songInfo"></div>
               <div class="songButtons">
-                <img
-                  id="shuffle"
-                  class="invert"
-                  src="/spotify/svgss/shuffle.svg"
-                />
-                <img
-                  id="previous"
-                  class="invert"
-                  src="/spotify/svgss/previous.svg"
-                />
-                <img id="play" class="invert" src="/spotify/svgss/play.svg" />
-                <img id="next" class="invert" src="/spotify/svgss/next.svg" />
+                <img id="shuffle" class="invert" src="/svgss/shuffle.svg" />
+                <img id="previous" class="invert" src="/svgss/previous.svg" />
+                <img id="play" class="invert" src="/svgss/play.svg" />
+                <img id="next" class="invert" src="/svgss/next.svg" />
                 <img
                   id="loop"
                   class="invert"
-                  src="/spotify/svgss/arrow-reload-horizontal.svg"
+                  src="/svgss/arrow-reload-horizontal.svg"
                 />
               </div>
               <div class="rockers invert">
                 <div class="songTime invert"></div>
                 <div class="volume invert">
-                  <img
-                    class="invert"
-                    src="/spotify/svgss/volume-high.svg"
-                    class=""
-                  />
+                  <img class="invert" src="/svgss/volume-high.svg" class="" />
                   <div class="range invert">
                     <input type="range" name="volume" id="" />
                   </div>
@@ -184,6 +158,6 @@
         </div>
       </div>
     </div>
-    <script src="/spotify/spotify.js" type="module"></script>
+    <script src="/spotify.js" type="module"></script>
   </body>
 </html>
